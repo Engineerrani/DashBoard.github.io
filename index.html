@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                      <spna class="title"><h2>Brand Name</h2></spna>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                      <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                      <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                      <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                      <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                      <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                      <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                      <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <lable>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </lable>
+                    <div class="user">
+                        <img src="https://th.bing.com/th/id/R.1c6bd6774f08c5b3a083df3f901e9d88?rik=7Pohh4vmF%2bZ55w&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fbaby_girl_user_icon_6821368.jpg&ehk=hMBSlVFVAHWvYoW68Cu5L6TPFhy0DSvYa9TzQAiOYNY%3d&risl=&pid=ImgRaw&r=0" width="200px" height="200px">
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Daily Views</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-eye" aria-hidden="true"></i> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">80</div>
+                            <div class="cardName">Sales</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">208</div>
+                            <div class="cardName">Comments</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-comment" aria-hidden="true"></i> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">$6,042</div>
+                            <div class="cardName">Books</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-usd" aria-hidden="true"></i> 
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="details">
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Recent Orders</h2>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Price</td>
+                                    <td>Payment</td>
+                                    <td>Status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Window Coolers</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                    <td><span class="status delivered">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>HP Laptop</td>
+                                    <td>$7000</td>
+                                    <td>Due</td>
+                                    <td><span class="status inprogress">In Progress</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Speakers</td>
+                                    <td>$600</td>
+                                    <td>Paid</td>
+                                    <td><span class="status return">Return</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Window Coolers</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>HP Laptop</td>
+                                    <td>$7000</td>
+                                    <td>Due</td>
+                                    <td><span class="status inprogress">In Progress</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Watch</td>
+                                    <td>$30000</td>
+                                    <td>Paid</td>
+                                    <td><span class="status return">Return</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2>Recent Customers</h2>
+                           
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://www.hdwallback.net/wp-content/uploads/2018/02/World-Beautiful-Girls-Wallpaper-HD-Images-1280x800.jpg" width="200px" height="200px"></div></td>
+                                    <td><h4>Ruth<br><span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://i.pinimg.com/originals/74/03/22/74032251f9d9e31140b37ef8457b2dca.jpg" width="200px" height="200px"></div></td>
+                                    <td><h4>Reema<br><span>Panjab</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://th.bing.com/th/id/OIP.KqzLv8QyILdTqc7e89VT7gHaJ4?pid=ImgDet&w=900&h=1200&rs=1" width="200px" height="200px"></div></td>
+                                    <td><h4>Kavya<br><span>kolkata</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://th.bing.com/th/id/OIP.Suh5KvTvv1gyt1EOrgwtYgHaLG?pid=ImgDet&w=1539&h=2308&rs=1" width="200px" height="200px"></div></td>
+                                    <td><h4>Ruth<br><span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://th.bing.com/th/id/OIP.mS3CwJPbshHFR1wyixaGSQHaLH?pid=ImgDet&w=1279&h=1920&rs=1" width="200px" height="200px"></div></td>
+                                    <td><h4>Amelia<br><span>France</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://1.bp.blogspot.com/-_y7nL3y96gM/XlUdpl16OVI/AAAAAAAAEKE/8jubn-_npak2X1dhm_yVZFUKykXf0RsfgCLcBGAsYHQ/s1600/Thailand%2Bbeauty%2Bmodel%2BView%2BBenyapa%2B-%2BOne%2Bday%2Bpracticing%2Bas%2Ba%2Bphotographer%2B%252812%2529.jpg" width="200px" height="200px"></div></td>
+                                    <td><h4>Suba<br><span>America</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width=60px><div class="imgBx"><img src="https://2.bp.blogspot.com/-JSxvlKH252s/UYfkNZp9ATI/AAAAAAABrL4/TnDpXZoquJA/s1600/IMG_6553.jpg" width="200px" height="200px"></div></td>
+                                    <td><h4>Reshu<br><span>India</span></h4></td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
